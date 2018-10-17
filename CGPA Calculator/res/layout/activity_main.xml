@@ -1,0 +1,152 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cgpa"
+    tools:context=".MainActivity" >
+    
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="708dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Enter Number"
+         android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/et1"
+        android:layout_marginTop="29dp"
+        android:text="Enter Credit"
+         android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+         android:textStyle="bold"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et2"
+        android:layout_marginTop="31dp"
+         android:textStyle="bold"
+        android:layout_toLeftOf="@+id/textView2"
+        android:background="#008000"
+        android:textColor="#FFFFFF"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt1"
+        android:layout_alignBottom="@+id/bt1"
+        android:layout_centerHorizontal="true" 
+        android:textStyle="bold"
+         android:background="#008000"
+        android:textColor="#FFFFFF"
+        android:text="CGPA" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt2"
+        android:layout_alignBottom="@+id/bt2"
+        android:layout_toRightOf="@+id/textView1"
+         android:background="#008000"
+        android:textColor="#FFFFFF"
+         android:textStyle="bold"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et2"
+        android:layout_alignRight="@+id/bt3"
+        android:layout_below="@+id/bt1"
+        android:layout_marginTop="17dp"
+         android:textStyle="bold"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv2"
+        android:layout_alignRight="@+id/tv2"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="21dp"
+         android:textStyle="bold"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/tv3"
+        android:layout_marginTop="39dp"
+        android:layout_toRightOf="@+id/bt1"
+        android:background="#008000"
+        android:textColor="#FFFFFF"
+        android:text="Average CGPA"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt4"
+        android:layout_below="@+id/bt4"
+        android:layout_marginTop="89dp"
+        android:layout_toRightOf="@+id/bt1"
+        android:background="#008000"
+        android:text="About Me"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+      </RelativeLayout>
+     </LinearLayout>
+   </ScrollView>
+
